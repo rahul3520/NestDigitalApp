@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutUSComponent } from './about-us/about-us.component';
 import { ContactUSComponent } from './contact-us/contact-us.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 const myRoute:Routes=[
   {
@@ -21,6 +22,10 @@ const myRoute:Routes=[
   {
     path:"contactUS",
     component:ContactUSComponent
+  },
+  {
+    path:"gallery",
+    component:GalleryComponent
   }
 ]
 
@@ -30,7 +35,8 @@ const myRoute:Routes=[
     NavBarComponent,
     HomeComponent,
     AboutUSComponent,
-    ContactUSComponent
+    ContactUSComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
