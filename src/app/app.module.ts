@@ -9,6 +9,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutUSComponent } from './about-us/about-us.component';
 import { ContactUSComponent } from './contact-us/contact-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { FormsModule } from '@angular/forms';
+import { AdminPageComponent } from './admin-page/admin-page.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { ViewallCoursesComponent } from './viewall-courses/viewall-courses.component';
+import { ViewallFriendsComponent } from './viewall-friends/viewall-friends.component'
 
 const myRoute:Routes=[
   {
@@ -26,6 +33,22 @@ const myRoute:Routes=[
   {
     path:"gallery",
     component:GalleryComponent
+  },
+  {
+    path:"adminLogin",
+    component:AdminLoginComponent
+  },
+  {
+    path:"adminPage",
+    component:AdminPageComponent
+  },
+  {
+    path:"viewallCourses",
+    component:ViewallCoursesComponent
+  },
+  {
+    path:"viewallFriends",
+    component:ViewallFriendsComponent
   }
 ]
 
@@ -36,12 +59,18 @@ const myRoute:Routes=[
     HomeComponent,
     AboutUSComponent,
     ContactUSComponent,
-    GalleryComponent
+    GalleryComponent,
+    AdminLoginComponent,
+    AdminPageComponent,
+    ViewallCoursesComponent,
+    ViewallFriendsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
