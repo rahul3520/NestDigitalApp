@@ -6,11 +6,16 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutUSComponent } from './about-us/about-us.component';
 
 const myRoute:Routes=[
   {
     path:"",
     component:HomeComponent
+  },
+  {
+    path:"aboutUS",
+    component:AboutUSComponent
   }
 ]
 
@@ -18,7 +23,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     NavBarComponent,
-    HomeComponent
+    HomeComponent,
+    AboutUSComponent
   ],
   imports: [
     BrowserModule,
