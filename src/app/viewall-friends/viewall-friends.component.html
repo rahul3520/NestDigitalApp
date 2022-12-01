@@ -8,9 +8,11 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of friends">
 
-                    <ng-container *ngIf="loading; then loadingScreen ; else dataScreen "></ng-container>
+                    <ng-container *ngIf="loading; then loadingScreen; else dataScreen "></ng-container>
 
                     <ng-template #loadingScreen>
+
+                        <p class="text-primary">Loading............</p>
 
                         <div class="spinner-grow text-primary" role="status">
                             <span class="visually-hidden">Loading...</span>
@@ -35,8 +37,8 @@
                           </div>
                           <div class="spinner-grow text-dark" role="status">
                             <span class="visually-hidden">Loading...</span>
-                          </div>
-                          
+                        </div>
+
                     </ng-template>
 
                     <ng-template #dataScreen>
@@ -52,6 +54,23 @@
                             </ul>
     
                         </div>
+
+                        <!-- <div class="card" style="width: 18rem;">
+                            <img src="" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">An item</li>
+                              <li class="list-group-item">A second item</li>
+                              <li class="list-group-item">A third item</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Card link</a>
+                              <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div> -->
 
                     </ng-template>
 

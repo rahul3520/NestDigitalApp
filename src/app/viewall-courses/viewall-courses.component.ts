@@ -16,6 +16,8 @@ export class ViewallCoursesComponent {
       (response:any)=>
       {
         this.loading=false
+
+        console.log(response)
         this.courses=response;
       }
     )
