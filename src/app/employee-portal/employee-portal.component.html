@@ -1,0 +1,27 @@
+<app-nav-bar></app-nav-bar>
+<h1>Employee Portal</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="label-control">Emp ID</label>
+                    <input name="empID" [(ngModel)]="empID" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="label-control">Password</label>
+                    <input name="password" [(ngModel)]="password" type="password" id="" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button (click)="empLogin()" class="btn btn-success">Login</button>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                   <a routerLink="/employeeRegistration">New employee registration</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

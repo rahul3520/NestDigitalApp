@@ -1,0 +1,79 @@
+<app-admin-page></app-admin-page>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of friends">
+
+                    <ng-container *ngIf="loading; then loadingScreen; else dataScreen "></ng-container>
+
+                    <ng-template #loadingScreen>
+
+                        <p class="text-primary">Loading............</p>
+
+                        <div class="spinner-grow text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          <div class="spinner-grow text-secondary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          <div class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          <div class="spinner-grow text-danger" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          <div class="spinner-grow text-warning" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          <div class="spinner-grow text-info" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          <div class="spinner-grow text-light" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          <div class="spinner-grow text-dark" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+
+                    </ng-template>
+
+                    <ng-template #dataScreen>
+
+                        <!-- <div class="card" >
+                            <div class="card-header">
+                              name : {{i.name}}
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">friend name : {{i.friendName}}</li>
+                              <li class="list-group-item">friend nickname : {{i.friendNickName}}</li>
+                              <li class="list-group-item">Describe your friend : {{i.DescribeYourFriend}}</li>
+                            </ul>
+    
+                        </div> -->
+
+                        <div class="card" >
+                            <img src="https://th.bing.com/th/id/OIP.BSKmfr5qbqFF3uqSTKYPQwHaFC?pid=ImgDet&rs=1" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">name : {{i.name}}</h5>
+                              
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">friend name : {{i.friendName}}</li>
+                              <li class="list-group-item">friend nickname : {{i.friendNickName}}</li>
+                              <li class="list-group-item">Describe your friend : {{i.DescribeYourFriend}}</li>
+                            </ul>
+                            
+                        </div>
+
+                    </ng-template>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
