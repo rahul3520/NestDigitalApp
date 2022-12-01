@@ -10,7 +10,7 @@ export class AddFriendComponent {
 
   name=""
   friendName=""
-  friendNickname=""
+  friendNickName=""
   DescribeYourFriend=""
 
   constructor(private api:ApiService){}
@@ -19,7 +19,7 @@ export class AddFriendComponent {
   {
     let data:any={"name":this.name,
     "friendName":this.friendName,
-    "friendNickname":this.friendNickname,
+    "friendNickname":this.friendNickName,
     "DescribeYourFriend":this.DescribeYourFriend
     }
 
@@ -40,7 +40,7 @@ export class AddFriendComponent {
           alert("Failed to add friend")
           this.name=""
           this.friendName=""
-          this.friendNickname=""
+          this.friendNickName=""
           this.DescribeYourFriend=""
 
         }

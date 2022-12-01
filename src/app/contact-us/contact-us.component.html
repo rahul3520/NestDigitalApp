@@ -1,5 +1,48 @@
-
 <app-nav-bar></app-nav-bar>
+<div class="container">
+  <div class="row">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+      <div class="row g-3">
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          <label for="" class="label-control">Name</label>
+          <input name="name" [(ngModel)]="name" type="text" class="form-control">
+        </div>
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          <label for="" class="label-control">Company Name</label>
+          <input name="companyName" [(ngModel)]="companyName" type="text" class="form-control">
+        </div>
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          <label for="" class="label-control">Designation</label>
+          <input name="designation" [(ngModel)]="designation" type="text" class="form-control">
+        </div>
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          <label for="" class="label-control">Phone No</label>
+          <input name="phoneNo" [(ngModel)]="phoneNo" type="text" class="form-control">
+        </div>
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          <label for="" class="label-control">Email</label>
+          <input name="email" [(ngModel)]="email" type="text" class="form-control">
+        </div>
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          <label for="" class="label-control">Country</label>
+          <input name="country" [(ngModel)]="country" type="text" class="form-control">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+          <label for="" class="label-control">Subject</label>
+          <input name="subject" [(ngModel)]="subject" type="text" class="form-control">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+          <button (click)="readValue()" class="btn btn-success">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 <div class="card text-center">
     <!-- <div class="card-header">
       Contact us

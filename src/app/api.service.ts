@@ -10,12 +10,11 @@ export class ApiService {
 
   fetchCourses=() =>
   {
-    return this.http.get("https://mylinkurcodesapp.herokuapp.com/getcourses")
+    return this.http.get('https://mylinkurcodesapp.herokuapp.com/getcourses')
   }
 
-  // "http://mylinkurcodesapp.herokuapp.com/addcourse"
-  
 
+  
   fetchFriends=() =>
   {
     return this.http.get("https://dummyapifriends.herokuapp.com/view")
@@ -24,11 +23,11 @@ export class ApiService {
 
   addCourses=(dataToSend:any) =>
   {
-    return this.http.post("https://mylinkurcodesapp.herokuapp.com/getcourses",dataToSend)
+    return this.http.post('http://mylinkurcodesapp.herokuapp.com/addcourse',dataToSend)
   }
 
   addFriends=(dataToSend:any) =>
   {
-    return this.http.post("https://dummyapifriends.herokuapp.com/view",dataToSend)
+    return this.http.post("https://dummyapifriends.herokuapp.com/adddata",dataToSend)
   }
 }
