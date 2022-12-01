@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutUSComponent } from './about-us/about-us.component';
 import { ContactUSComponent } from './contact-us/contact-us.component';
+
 import { GalleryComponent } from './gallery/gallery.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { FormsModule } from '@angular/forms';
@@ -21,6 +22,7 @@ import { EmployeeRegistrationComponent } from './employee-registration/employee-
 import { EmpPageComponent } from './emp-page/emp-page.component';
 import { AddCourseComponent } from './add-course/add-course.component';
 import { AddFriendComponent } from './add-friend/add-friend.component'
+
 
 const myRoute:Routes=[
   {
@@ -101,6 +103,7 @@ const myRoute:Routes=[
     RouterModule.forRoot(myRoute),
     FormsModule,
     HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
