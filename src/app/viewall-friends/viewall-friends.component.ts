@@ -14,11 +14,16 @@ export class ViewallFriendsComponent {
 
       (response:any)=>
       {
+        this.loading=false
+
+        console.log(response)
         this.friends=response
       }
     )
   }
 
   friends:any=[]
+
+  loading:boolean=true
 
 }

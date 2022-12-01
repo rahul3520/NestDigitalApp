@@ -15,7 +15,12 @@ import { AdminPageComponent } from './admin-page/admin-page.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ViewallCoursesComponent } from './viewall-courses/viewall-courses.component';
-import { ViewallFriendsComponent } from './viewall-friends/viewall-friends.component'
+import { ViewallFriendsComponent } from './viewall-friends/viewall-friends.component';
+import { EmployeePortalComponent } from './employee-portal/employee-portal.component';
+import { EmployeeRegistrationComponent } from './employee-registration/employee-registration.component';
+import { EmpPageComponent } from './emp-page/emp-page.component';
+import { AddCourseComponent } from './add-course/add-course.component';
+import { AddFriendComponent } from './add-friend/add-friend.component'
 
 const myRoute:Routes=[
   {
@@ -49,6 +54,26 @@ const myRoute:Routes=[
   {
     path:"viewallFriends",
     component:ViewallFriendsComponent
+  },
+  {
+    path:"employeePortal",
+    component:EmployeePortalComponent
+  },
+  {
+    path:"employeeRegistration",
+    component:EmployeeRegistrationComponent
+  },
+  {
+    path:"addFriend",
+    component:AddFriendComponent
+  },
+  {
+    path:"addCourse",
+    component:AddCourseComponent
+  },
+  {
+    path:"empPage",
+    component:EmpPageComponent
   }
 ]
 
@@ -63,7 +88,12 @@ const myRoute:Routes=[
     AdminLoginComponent,
     AdminPageComponent,
     ViewallCoursesComponent,
-    ViewallFriendsComponent
+    ViewallFriendsComponent,
+    EmployeePortalComponent,
+    EmployeeRegistrationComponent,
+    EmpPageComponent,
+    AddCourseComponent,
+    AddFriendComponent
   ],
   imports: [
     BrowserModule,

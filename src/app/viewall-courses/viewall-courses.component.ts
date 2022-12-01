@@ -15,6 +15,9 @@ export class ViewallCoursesComponent {
 
       (response:any)=>
       {
+        this.loading=false
+
+        console.log(response)
         this.courses=response;
       }
     )
@@ -22,5 +25,7 @@ export class ViewallCoursesComponent {
   }
 
   courses:any=[]
+
+  loading:boolean=true
 
 }
